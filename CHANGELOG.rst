@@ -2,8 +2,8 @@
 Changelog for package genpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.7.17 (2026-10-28)
+-------------------
 * Add extra escape sequence to fix noble sourcing
 * Fix bug in reduce_pattern (#152)
   reduce_pattern only checks whether the current character in the format string is a number up to including 8. This causes a bug when reading ros messages containing an array which has a size that contains two consecutive 9s.
