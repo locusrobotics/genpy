@@ -2,6 +2,17 @@
 Changelog for package genpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add extra escape sequence to fix noble sourcing
+* Fix bug in reduce_pattern (#152)
+  reduce_pattern only checks whether the current character in the format string is a number up to including 8. This causes a bug when reading ros messages containing an array which has a size that contains two consecutive 9s.
+* Add previous maintainer as an author
+* Update package maintainers
+* Fix typos discovered by codespell (#142)
+* (docs) Add automodule (#143)
+* Contributors: Christian Clauss, Geoffrey Biggs, James Prestwood, Matthijs van der Burgh, bigolol
+
 0.6.16 (2021-05-01)
 -------------------
 * Fix runtime incompatibility with messages generated with 0.6.14 (`#139 <https://github.com/ros/genpy/issues/139>`_)
